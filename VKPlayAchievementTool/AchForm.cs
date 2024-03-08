@@ -230,7 +230,14 @@ namespace VKPlayAchievementTool
         private void SingleStoreStats(long ach, int progress, bool comp)
         {
             var statsData = new HttpStoreStats.Builder();
-            statsData.Add(ach, progress, comp);
+            foreach (var i in GlobalList)
+            {
+                if (i.ach_id != ach)
+                    statsData.Add(i.ach_id, i.progress, i.is_completed);
+                else
+                    statsData.Add(ach, progress, comp);
+            }
+            
             var result = statsData.Finalize();
             MainListView.Enabled = false;
             UnlockAllButton.Enabled = false;
