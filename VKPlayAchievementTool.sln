@@ -14,6 +14,7 @@ Global
 		{266B80F3-002E-4334-8372-3CCF8680D4C1}.Debug|x64.ActiveCfg = Debug|x64
 		{266B80F3-002E-4334-8372-3CCF8680D4C1}.Debug|x64.Build.0 = Debug|x64
 		{266B80F3-002E-4334-8372-3CCF8680D4C1}.Release|x64.ActiveCfg = Release|x64
+		{266B80F3-002E-4334-8372-3CCF8680D4C1}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
